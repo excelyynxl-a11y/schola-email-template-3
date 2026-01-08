@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Schola Email Template 3</title>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Schola banner -->
+        <div class="header">
+            <a href="#" class="logo">
+                <img src="assets/schola-logo.png" href="#">
+            </a>
+            <a href="#" class="link-to-website">
+                View in browser
+            </a>
+        </div>
+
+        <!-- title -->
+        <div class="title">
+            <img class="welcome-image" src="assets/schola-welcome-2.jpg">
+            <h3>Welcome Abroad to {school_name}</h3>
+        </div>
+
+        <!-- main content: greetings + welcome message + details + automated message -->
+        <div class="content">
+            <p class="greeting">
+                Dear, <span> {parent_name} </span>
+            </p>
+
+            <p class="message">
+                We are delighted to welcome <span>{child_name}</span> to <span>{school_name}</span>! <br>
+                As part of our registration process, we have created accounts for both you and your child 
+                in our <span>{school_name}</span>.<br> 
+                Below are the registration details you will need to access the system, 
+                along with links to download our mobile app for your convenience.
+            </p>
+
+            <div class="detail child">
+                <p>
+                    Student Credential Details:
+                </p>
+                <ul>
+                    <li>
+                        <span>
+                            Name
+                        </span>
+                        : {child_name}
+                    </li>
+                    <li>
+                        <span>
+                            Admission No.
+                        </span>
+                        : {admission_no}
+                    </li>
+                    <li>
+                        <span>
+                            Student ID
+                        </span>
+                        : {grno}
+                    </li>
+                    <li>
+                        <span>
+                            Password 
+                        </span>
+                        : {child_password}
+                    </li>
+                </ul>
+            </div>
+
+            <div class="detail">
+                <p>
+                    Parent Credential Details:
+                </p>
+                <ul>
+                    <li>
+                        <span>
+                            Name
+                        </span>
+                        : {parent_name}
+                    </li>
+                    <li>
+                        <span>
+                            Email
+                        </span>
+                        : {email}
+                    </li>
+                    <li>
+                        <span>
+                            Password 
+                        </span>
+                        : {child_password}
+                    </li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <p>
+                    Steps to Complete Your Registration:
+                </p>
+                <ol>
+                    <li>
+                        Download the school management app using the links above for 
+                        easier access on your mobile devices.
+                    </li>
+                    <li>
+                        Enter the email and password for either the student or parent account.
+                    </li>
+                    <li>
+                        Follow the on-screen instructions to complete the profile setup.
+                    </li>
+                </ol>
+            </div>
+
+            <div class="important">
+                <p>
+                    Important:
+                </p>
+                <ul>
+                    <li>
+                        For security reasons, 
+                        please ensure that both the student and parent passwords are changed upon first login.
+                    </li>
+                    <li>
+                       If you encounter any issues during the registration process, 
+                       please do not hesitate to contact our support team at 
+                       {support_email} or call {support_contact}.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="download">
+                <p>
+                    App Download Links:
+                </p>
+                <ul>
+                    <li>
+                        <span>
+                            Android
+                        </span>
+                        : {android_app}
+                    </li>
+                    <li>
+                        <span>
+                            iOS
+                        </span>
+                        : {ios_app}
+                    </li>
+                    <li>
+                        <span>
+                            Huawei
+                        </span>
+                        : {huawei_app}
+                    </li>
+                </ul>
+            </div>
+
+            <p class="message">
+                We look forward to an enriching educational experience for {child_name} at {school_name}. <br>
+                Thank you for entrusting us with your child's education.
+            </p>
+
+            <p class="automated-messsage">
+                This is an automated message from Schola system.
+                No reply is needed.
+            </p>
+        </div>
+
+        <!-- regards from academy -->
+        <div class="signature">
+            <p>
+                Best regards,
+            </p>
+            <p>
+                {school_name}
+            </p>
+        </div>
+
+        <!-- footer with academy's support email, contact, website + Schola's 'copyright -->
+        <div class="footer">
+            <div class="contacts">
+                Support Email: <a href="#" class="academy-email"> {support_email} </a> <br>
+                Contact: <a href="#" class="academy-number"> {support_contact} </a> <br>
+                Website: <a href="#" class="academy-website"> {url} </a>
+            </div>
+
+            <div class="copyright">
+                <p class="email-sent">
+                    Email sent by Schola.one 
+                </p>
+                <p class="all-rights-reserved">
+                    Copyright © 2026 Schola.one. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
